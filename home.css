@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: Arial;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background: #f2f2f2;
+}
+
+.header2 {
+  background-color: #FDBA71;
+  color: #000000;
+  padding: 20px;
+  text-align: center;
+  font-size: 13px;
+  width: 100%;
+  position: static;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.logos {
+  margin: 0;
+  overflow: hidden;
+  padding: 60px 0;
+  background: white;
+  white-space: nowrap;
+  position: relative;
+}
+
+.logos:before,
+.logos:after {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.logos:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+
+.logos:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+}
+
+.logos-slide {
+  display: inline-block;
+  animation: 35s slide infinite linear;
+  background-color: #bdbcbb;
+}
+
+.logos-slide img {
+  height: 250px;
+  margin: 20px 20px 20px 0;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 70px; /* Increase the gap between columns */
+  padding: 20px;
+  margin: 20px auto; /* Center the cards horizontally and add margin for spacing */
+  max-width: 800px; /* Limit the maximum width of the cards */
+}
+
+
+.card {
+  position: relative;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 40px; /* Add padding to create space between cards */
+  margin: 0px 20px 20px 20px; /* Add margin to create space between cards */
+}
+
+
+.card:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0 0; /* Rounded top corners */
+}
+
+.card-content {
+  padding: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.card-content h1 {
+  font-size: 20px;
+  text-align: center;
+}
+
+.card-content p {
+  font-size: 14px;
+  text-align: justify;
+}
+
+.card-link {
+  display: block;
+  text-align: center;
+  padding: 10px 0;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  position: absolute; /* Position the button */
+  bottom: 0; /* Align the button to the bottom */
+  left: 0;
+  width: 100%;
+  border-radius: 0 0 10px 10px; /* Rounded bottom corners */
+  z-index: 2;
+  opacity: 1; /* Ensure the button is visible by default */
+  transform: scale(1); /* Ensure the button is at its original scale */
+}
+
+.card:hover .card-link {
+  background-color: #0056b3; /* Darker background color on hover */
+  transform: scale(1.05); /* Scale the button slightly on hover */
+}
+
+.card-link:hover {
+  background-color: #004080; /* Darker background color when the button is hovered */
+}
+
+
+
+.header3 {
+  text-align: center;
+  background-color: #FDBA71;
+  color: #000000;
+  padding: 20px;
+  font-size: 13px;
+}
