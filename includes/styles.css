@@ -1,0 +1,128 @@
+/* header.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: linear-gradient(135deg, #2b2E4A, #1C1F2A); /* Updated gradient background */
+    color: #fff;
+    padding: 1rem 0;
+    line-height: 1.6;
+    margin-top: 0;
+    margin-bottom: 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 1rem;
+    position: relative;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s; /* Only transition color */
+    position: relative;
+    overflow: hidden;
+}
+
+header nav ul li a .icon {
+    margin-right: 0.5rem;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+}
+
+header nav ul li a::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: radial-gradient(circle, rgba(253,186,113,0.4) 0%, rgba(255,140,0,0.4) 50%, transparent 70%);
+    transition: all 0.3s;
+    transform: translate(-50%, -50%) scale(0);
+    z-index: 0;
+}
+
+header nav ul li a:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+header nav ul li a:hover {
+    color: #FF8C00; /* Change text color on hover */
+}
+
+header nav ul li a.active {
+    background: #777;
+}
+
+header nav ul li a:active {
+    transform: translateY(1px);
+}
+
+/* Profile icon example */
+.profile-icon {
+    background-image: url('icons/profile.png'); /* Replace with the actual path to your icon */
+}
+
+/* footer designs
+
+footer.css */
+
+footer {
+    background: #2b2E4A;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+footer .social-media a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 1.5rem;
+}
+
+footer .social-media a:hover {
+    color: #FF8C00;
+}
+
+footer .contact-info {
+    margin-top: 1rem;
+}
+
+footer .contact-info p {
+    margin: 0;
+}
+
+footer .legal-info a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer .legal-info a:hover {
+    color: #FF8C00;
+}
+

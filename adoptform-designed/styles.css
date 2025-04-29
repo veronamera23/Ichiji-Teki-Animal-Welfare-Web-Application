@@ -1,0 +1,80 @@
+body {
+    font-family: Arial;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+hr.top {
+    margin-bottom: 0;
+    border: 20px solid #2b2E4A;
+}
+
+/* Styles for adoption.php */
+
+.container {
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 800px;
+    color
+}
+
+.adoption-form {
+    background-color: #ECECEC;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.adoption-form h1 {
+    font-size: 2em;
+    color: #2b2E4A;
+    margin-bottom: 20px;
+}
+
+.adoption-form label {
+    font-size: 1.2em;
+    color: #2b2E4A;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.adoption-form input[type="text"],
+.adoption-form input[type="radio"],
+.adoption-form input[type="checkbox"],
+.adoption-form select,
+.adoption-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #FF8C00;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.adoption-form textarea {
+    height: 100px;
+}
+
+.adoption-form button {
+    display: block;
+    width: 100%;
+    height: 60px;
+    background-color: #FDBA71;
+    border: solid #FF8C00;
+    border-radius: 7px;
+    padding: 1% 8%;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    transition: background-color 0.3s;
+}
+
+.adoption-form button:hover {
+    background-color: #FF8C00;
+}
+

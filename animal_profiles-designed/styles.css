@@ -1,0 +1,181 @@
+body {
+    font-family: Arial;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+h3 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: em;
+    color: #FDBA71;
+    margin-bottom: 10px;
+}
+
+p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.2em;
+    color: #2b2E4A;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+hr.top {
+    margin-bottom: 0;
+    border: 20px solid #2b2E4A;
+}
+
+.animal-profiles h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    font-size: 3em;
+    text-align: center;
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-bottom: 1%;
+    padding-top: 0;
+    color: #2b2E4A;
+    white-space: nowrap;
+}
+
+.type {
+    width: 25%;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    border: 2px solid #FF8C00;
+    border-radius: 5px;
+    font-size: 1em;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.status {
+    width: 25%;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    border: 2px solid #FF8C00;
+    border-radius: 5px;
+    font-size: 1em;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+select {
+    padding: 10px;
+}
+
+.search {
+    width: 30%;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    border: 2px solid #FF8C00;
+    border-radius: 5px;
+    font-size: 1em;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.searchbutton {
+    width: 20%;
+    display: block;
+    margin-top: -0.75%;
+    margin-right: 10px;
+    right: 0;
+    height: 44px;
+    background-color: #FDBA71;
+    border: solid 2px #FF8C00;
+    border-radius: 5px;
+    padding: 10px 20px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    transition: background-color 0.3s, transform 0.3s;
+    cursor: pointer;
+}
+
+.searchbutton:hover {
+    background-color: #FF8C00;
+}
+
+/* END OF SEARCH AREA, STATUS, TYPE, DESIGN */
+
+.animal-cards-container {
+    display: flex; 
+    justify-content: center;
+}
+
+.animal-cards {
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 16px; 
+    justify-content: center;
+    width: 100%;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    flex: 0 1 calc(32% - 31px);
+    border: 5px solid #FDBA71;
+    border-radius: 8px;
+    padding: 16px;
+    box-sizing: border-box;
+    text-align: left;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: box-shadow 0.3s, background-color 0.3s;
+    margin-top: 10px;
+}
+
+.card:hover {
+    box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.3), 0 8px 24px 0 rgba(0, 0, 0, 0.22);
+}
+
+.img-container {
+    flex: 0 0 50%;
+    height: 200px;
+    overflow: hidden;
+    margin-right: 16px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.card-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.card h3 {
+    margin: 0;
+}
+
+.card p {
+    margin: 0.5em 0;
+}
+
+.card button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: #FDBA71;
+    color: white;
+    cursor: pointer;
+    width: auto;
+}
+
+.card button:hover {
+    background-color: #FF8C00;
+}
